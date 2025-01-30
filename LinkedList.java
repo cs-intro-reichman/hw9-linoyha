@@ -281,9 +281,9 @@ public class LinkedList {
 		String s = "";
 		Node current = first;
 		while (current != null) {
-			s = s + current.block + " ";
-			current = current.next;
-}
-return s;
+		s = s + current.block + " ";
+		current = current.next;
+		}
+		return s;
+		}
 	}
-}
