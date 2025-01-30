@@ -124,8 +124,10 @@ public class LinkedList {
 	 */
 	public void addLast(MemoryBlock block) {
 		if (this.size == 0) {
-			this.first = new Node(block);
-			this.last = new Node(block);
+			Node new1 = new Node (block);
+			this.first = new1;
+			this.last = new1;
+			
 		}
 		else {
 		Node current = this.last;
@@ -211,7 +213,10 @@ public class LinkedList {
 	 */
 	public void remove(Node node) {
 			int index = indexOf(node.block);
-			remove(index);
+			if (index != -1) {
+				remove(index);
+			}
+			
 	}
 
 	/**
